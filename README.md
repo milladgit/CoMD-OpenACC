@@ -1,7 +1,10 @@
 CoMD
 ====
 
-Classical molecular dynamics proxy application.
+Classical molecular dynamics proxy application. 
+
+Tested with PGI 18.10 and OpenACC 2.6.
+
 
 This is CoMD version 1.1
 ------------------------
@@ -18,3 +21,6 @@ To view the generated Doxygen documentation for CoMD, please visit
 <a href="http://exmatex.github.io/CoMD/doxygen-mpi/index.html">exmatex.github.io/CoMD/doxygen-mpi/index.html</a>.
 
 To contact the developers of CoMD send email to exmatex-comd@llnl.gov.
+
+To contact the developers of OpenACC version, send email to Millad Ghane (mghane2@uh.edu), Sunita Chandrasekaran (Contact: schandra@udel.edu), and Margaret S. Cheung (Contact: mscheung@central.uh.edu).
+
