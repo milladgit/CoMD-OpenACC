@@ -1,0 +1,85 @@
+
+Accelerator Kernel Timing data
+/home/millad/CoMD-ALL/src-acc/v06/timestep.c
+  advanceVelocity  NVIDIA  devicenum=0
+    time(us): 4,542
+    95: compute region reached 200 times
+        95: kernel launched 200 times
+            grid: [864]  block: [128]
+             device time(us): total=4,542 max=25 min=20 avg=22
+            elapsed time(us): total=8,269 max=81 min=35 avg=41
+    95: data region reached 400 times
+/home/millad/CoMD-ALL/src-acc/v06/timestep.c
+  updateHost  NVIDIA  devicenum=0
+    time(us): 291,948
+    101: update directive reached 100 times
+        101: data copyout transfers: 600
+             device time(us): total=291,948 max=964 min=6 avg=486
+/home/millad/CoMD-ALL/src-acc/v06/timestep.c
+  advancePosition  NVIDIA  devicenum=0
+    time(us): 2,842
+    139: compute region reached 100 times
+        139: kernel launched 100 times
+            grid: [864]  block: [128]
+             device time(us): total=2,842 max=30 min=27 avg=28
+            elapsed time(us): total=4,445 max=62 min=42 avg=44
+    139: data region reached 200 times
+/home/millad/CoMD-ALL/src-acc/v06/timestep.c
+  updateGPU  NVIDIA  devicenum=0
+    time(us): 480,251
+    140: update directive reached 100 times
+        140: data copyin transfers: 600
+             device time(us): total=480,251 max=1,588 min=6 avg=800
+/home/millad/CoMD-ALL/src-acc/v06/timestep.c
+  kineticEnergy  NVIDIA  devicenum=0
+    time(us): 496
+    192: compute region reached 11 times
+        192: data copyin transfers: 11
+             device time(us): total=53 max=7 min=4 avg=4
+        192: kernel launched 11 times
+            grid: [864]  block: [128]
+             device time(us): total=276 max=26 min=25 avg=25
+            elapsed time(us): total=462 max=49 min=40 avg=42
+        192: reduction kernel launched 11 times
+            grid: [1]  block: [256]
+             device time(us): total=44 max=4 min=4 avg=4
+            elapsed time(us): total=203 max=19 min=18 avg=18
+        192: data copyout transfers: 11
+             device time(us): total=123 max=12 min=11 avg=11
+    192: data region reached 22 times
+/home/millad/CoMD-ALL/src-acc/v06/ljForce.c
+  ljForce  NVIDIA  devicenum=0
+    time(us): 1,123,995
+    178: compute region reached 101 times
+        178: kernel launched 101 times
+            grid: [1372]  block: [128]
+             device time(us): total=5,312 max=68 min=51 avg=52
+            elapsed time(us): total=9,747 max=149 min=83 avg=96
+    178: data region reached 202 times
+    200: compute region reached 101 times
+        200: data copyin transfers: 101
+             device time(us): total=712 max=12 min=2 avg=7
+        200: kernel launched 101 times
+            grid: [1728]  block: [128]
+             device time(us): total=1,116,045 max=13,030 min=10,791 avg=11,049
+            elapsed time(us): total=1,117,979 max=13,049 min=10,808 avg=11,069
+        200: reduction kernel launched 101 times
+            grid: [1]  block: [256]
+             device time(us): total=526 max=6 min=5 avg=5
+            elapsed time(us): total=2,564 max=152 min=19 avg=25
+        200: data copyout transfers: 101
+             device time(us): total=1,400 max=24 min=12 avg=13
+    200: data region reached 202 times
+/home/millad/CoMD-ALL/src-acc/v06/./memUtils.h
+  transferToGPU  NVIDIA  devicenum=0
+    time(us): 24,019
+    55: data region reached 1 time
+        34: kernel launched 2744 times
+            grid: [1]  block: [128]
+             device time(us): total=5,495 max=4 min=2 avg=2
+            elapsed time(us): total=46,503 max=344 min=15 avg=16
+        55: data copyin transfers: 2745
+             device time(us): total=13,484 max=16 min=4 avg=4
+    56: data region reached 1 time
+        56: data copyin transfers: 7
+             device time(us): total=5,040 max=1,631 min=8 avg=720

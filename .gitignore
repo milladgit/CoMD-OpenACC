@@ -1,0 +1,41 @@
+# Object files
+*.o
+
+# Libraries
+*.lib
+*.a
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+bin/
+
+#YAML files
+*.yaml
+
+#tracefiles
+traces/
+
+# Doxygen directories
+src-mpi/html
+src-mpi/latex
+
+#Eclipse files
+.cproject
+.depend
+.project
+.settings/
+
+#VS Code files
+.vscode/
+
+#CoMD files
+src-acc/*/CoMD_info.h
+
